@@ -11,6 +11,7 @@ import com.example.roomdb.model.RoomColumn;
 
 @Database(entities = RoomColumn.class , version = 1 , exportSchema = false)
 public abstract class RoomDB extends RoomDatabase {
+    public abstract RoomDao roomDao();
     public static RoomDB roomDB;
     public static RoomDB getInstance(Context context){
         if (roomDB == null){
