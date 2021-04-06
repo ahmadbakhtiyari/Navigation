@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.phone_address">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:id="@+id/phone_editText"
+            android:layout_centerInParent="true"
+            android:inputType="number"
+            android:maxLength="11"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:id="@+id/address_editText"
+            android:layout_below="@+id/phone_editText"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sumbit"
+            android:id="@+id/Next_phone_address"
+            android:layout_below="@+id/address_editText"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/phone_editText"
+            android:layout_centerHorizontal="true"
+            android:text="Back"
+            android:id="@+id/back_phoneAddress"
+            />
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

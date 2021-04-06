@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.namemail">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:layout_margin="8dp"
+            android:id="@+id/name_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:hint="Name"
+            android:maxLength="15"/>
+
+        <EditText
+            android:layout_margin="8dp"
+            android:id="@+id/Email_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_editText"
+            android:layout_centerInParent="true"
+            android:hint="Email : example@gmail.com" />
+
+        <Button
+            android:id="@+id/Sumbit_nameEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Email_editText"
+            android:text="sumbit" />
+
+
+    </RelativeLayout>
+</FrameLayout>

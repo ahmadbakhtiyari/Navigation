@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/namemail">
+
+    <fragment
+        android:id="@+id/namemail"
+        android:name="com.example.navigationtest.fragments.namemail"
+        android:label="fragment_namemail"
+        tools:layout="@layout/fragment_namemail" >
+        <action
+            android:id="@+id/action_namemail_to_phone_address"
+            app:destination="@id/phone_address" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/phone_address"
+        android:name="com.example.navigationtest.fragments.phone_address"
+        android:label="fragment_phone_address"
+        tools:layout="@layout/fragment_phone_address" >
+        <action
+            android:id="@+id/action_phone_address_to_namemail"
+            app:destination="@id/namemail"
+            app:popUpTo="@+id/namemail"
+            app:popUpToInclusive="true"/>
+
+        <action
+            android:id="@+id/action_phone_address_to_describtion"
+            app:destination="@id/describtion" />
+    </fragment>
+
+
+
+
+    <fragment
+        android:id="@+id/describtion"
+        android:name="com.example.navigationtest.fragments.Describtion"
+        android:label="fragment_describtion"
+        tools:layout="@layout/fragment_describtion" >
+        <action
+            android:id="@+id/action_describtion_to_phone_address"
+            app:destination="@id/phone_address"
+            app:popUpTo="@id/phone_address"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/action_describtion_to_allinfo"
+            app:destination="@id/allinfo" />
+    </fragment>
+
+
+
+
+    <fragment
+        android:id="@+id/allinfo"
+        android:name="com.example.navigationtest.fragments.allinfo"
+        android:label="fragment_allinfo"
+        tools:layout="@layout/fragment_allinfo" >
+        <action
+            android:id="@+id/action_allinfo_to_describtion"
+            app:destination="@id/describtion"
+            app:popUpTo="@id/describtion"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+
+
+
+
+</navigation>

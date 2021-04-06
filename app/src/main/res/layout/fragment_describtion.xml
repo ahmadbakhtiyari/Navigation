@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Describtion">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describtion"
+            android:id="@+id/describtion_edittext"
+            android:layout_centerInParent="true"
+            android:layout_margin="8dp"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sumbit"
+            android:layout_below="@+id/describtion_edittext"
+            android:id="@+id/Next_Description"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/describtion_edittext"
+            android:layout_centerHorizontal="true"
+            android:text="Back"
+            android:id="@+id/back_describtion"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
