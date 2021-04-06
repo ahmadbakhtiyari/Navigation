@@ -24,7 +24,7 @@ public class phone_address extends Fragment {
 
 
     String TAG = phone_address.class.getSimpleName();
-    Button next, back;https://github.com/ahmadbakhtiyari/Navigation.git
+    Button next, back;
     EditText phone, address;
 
     @Override
