@@ -34,6 +34,7 @@ public class phone_address extends Fragment {
         View view = inflater.inflate(R.layout.fragment_phone_address, container, false);
         next = view.findViewById(R.id.Next_phone_address);
         back = view.findViewById(R.id.back_phoneAddress);
+
         phone = view.findViewById(R.id.phone_editText);
         address = view.findViewById(R.id.address_editText);
 
